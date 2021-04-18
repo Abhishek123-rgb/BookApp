@@ -8,7 +8,7 @@ const Book = ({image, author, title}) => {
                 <Row>
                     <Col className="app">
                         <h1 className="heading">{title}</h1><br/>
-                        <img src={image} className="img"/>
+                        <img src={image} className="img" alt="book"/>
                         <h3 className="author">{author}</h3>
                     </Col>
                 </Row>
