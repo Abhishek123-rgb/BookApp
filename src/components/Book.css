@@ -1,6 +1,19 @@
-.book{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.app{
+    border: 2px solid white;
+}
+.img{
+    width: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.heading{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.author{
+    width: 100%;
+    margin-top: 20px;
 }
 

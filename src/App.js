@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import Book from './components/Book';
-import Header from './components/Header'
-
+import "./App.css";
 const App = () => {
 
     const [books, setBooks] = useState([])
@@ -19,15 +18,22 @@ const App = () => {
 
 
     return (
-        <div>
-            <Header/>
-            {books.map(book => (
-                <Book
-                image={book.volumeInfo.imageLinks.smallThumbnail}
-                author={book.volumeInfo.authors}
-                title={book.volumeInfo.readingModes.title}
-                 />
-            ))}
+        <div className="App">
+            <form className="search-form">
+                <input className="search-bar" type="text" placeholder="Search Book"/>
+                <button className="search-button" type="submit">Search</button>
+            </form>
+            <div>
+                <div className="abcd">
+                    {books.map(book => (
+                        <Book
+                        image={book.volumeInfo.imageLinks.thumbnail}
+                        author={book.volumeInfo.authors}
+                        title={book.volumeInfo.title}
+                        />
+                    ))}
+                </div>
+            </div>
         </div>
     )
 }
