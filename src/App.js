@@ -27,7 +27,7 @@ const App = () => {
     return (
         <div className="App">
             <form className="search-form" onSubmit={handleSubmit}>
-                <input className="search-bar" type="text" value="search" placeholder="Search Book" onChange={e => setSearch(e.target.value)}/>
+                <input className="search-bar" type="text" value={search} placeholder="Search Book" onChange={e => setSearch(e.target.value)}/>
                 <button className="search-button" type="submit">Search</button>
             </form>
             <div>
